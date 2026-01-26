@@ -1,0 +1,35 @@
+Process Management
+
+Viewing Process
+ps → Displays the running process for the terminal.
+ps aux → Lists all process w/ CPU & memory usage.
+top → Real-time dynamic view for running process.
+
+Process Control
+kill PID → Sends a signal to terminate a process no (PID)
+kill name → Kills process by process name
+killall name → Terminates all process with the given name.
+
+Background & Foreground
+command & → Runs a command in the background
+jobs → Lists background jobs in the current shell.
+fg jobID → Brings a background job to the foreground.
+bg jobID → Resumes a stopped job in the background.
+
+Process Priority
+nice -n value command → Starts a process w/ a given priority.
+renice value PID → Changes priority of a running process.
+
+Process Information
+pidof process → Displays PID of a running process.
+pgrep process → Searches process IDs by name or pattern.
+pstree → Shows in a parent-child tree format.
+
+Signals & Monitoring
+$watch command → Repeats a command at regular intervals.
+$uptime → Shows sys running time & load average.
+$time command → Measures execution time of a command.
+
+Daemon & System Process
+systemctl status service → Shows status of a sys service.
+systemctl start/stop/restart → start/stop/restart/enable a sys service
